@@ -1,12 +1,99 @@
-.handStyles {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+:root {
+  --clr-light-brown: #D3A373;
+  --clr-dark-brown: #7A5235;
+  --clr-darkest-brown: #4A2F1C;
+  --clr-rain-blue: #A2D2FF;
+  --clr-transp-blue: rgba(169, 198, 218, 0.5);
+  --clr-sage: #CCD5AE;
 }
+
+body {
+  color: var(--clr-light-brown);
+  font-family: "Madimi One", sans-serif;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  background-color: var(--clr-dark-brown);
+  padding: 30px;
+}
+
 .cardStyles {
-  border: 1px solid black;
+  border: 1px solid var(--clr-light-brown);
   width: 70px;
   height: 95px;
   margin: 10px;
-  padding: 10px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: var(--clr-darkest-brown);
+  cursor: pointer;
 }
+
+.cardStyles:hover {
+  transform: scale(1.1);
+  background-color: var(--clr-transp-blue);
+  border: 1px solid var(--clr-rain-blue);
+  color: var(--clr-rain-blue);
+}
+
+.cards-dealt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--clr-sage);
+}
+
+.plant-btn {
+  max-width: 100px;
+  max-height: 100px;
+  cursor: pointer;
+}
+
+.uproot-btn {
+  max-width: 100px;
+  max-height: 100px;
+  cursor: pointer;
+}
+
+.btn-cont {
+  display: flex;
+  justify-content: space-around;
+}
+
+.inner-card-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cloud-img {
+  position: absolute;
+  top: 10;
+  left: 10;
+  max-width: 220px;
+  max-height: 220px;
+}
+
+.cloud-text {
+  position: absolute;
+  top: 110px;
+  left: 80px;
+}
+
+
+
+

@@ -27,11 +27,11 @@ PRs should be posted _before_ class begins on Monday, March 4, 2024.
 
 ### React Challenge
 
-1. React Debugging: The Card Draw React application has three (3) errors that need to be fixed. Use the console and error messages to guide you to the solution.
+1. React Debugging: The Card Draw React application has three (3) errors that need to be fixed. Use the console and error messages to guide you to the solution. ✅
 
-2. React Feature: Add functionality to the `Return Cards and Shuffle Deck` button using the `shuffle` function to reset the Card Draw application to its original state.
+2. React Feature: Add functionality to the `Return Cards and Shuffle Deck` button using the `shuffle` function to reset the Card Draw application to its original state. ✅
 
-3. React Concepts: Add comments to the seven (7) notations in the `drawCard` function describing in detail the functionality line of code BELOW the comment.
+3. React Concepts: Add comments to the seven (7) notations in the `drawCard` function describing in detail the functionality line of code BELOW the comment. ✅
 
 4. STRETCH (optional): Add stylings of your choice to the application. Ensure the styling does not interfere with the card draw functionality.
 
@@ -39,23 +39,27 @@ PRs should be posted _before_ class begins on Monday, March 4, 2024.
 
 1. What are three (3) syntax differences between HTML and JSX?
 
--
--
--
+- ability to use component call syntax in jsx
+- jsx curly brackets to implement js within an html element
+- the ability to use event handlers like onClick within the element
 
 2. What is yarn? What file(s) are modified when you run the command yarn in your terminal?
+   Yarn is a package manager 😁 ummm... I'm not exactly sure what yarn is and what it does, but I know it's responsible for installing all the node modules and extensions and dependencies that work to make our react apps function. When the command is run in the terminal, I'm not sure what exact files are modified, but I know it creates a lot of new files and directories like index.html, App.js, package.json, etc.
 
 3. What is the difference between state values and props in React?
+   State values hold any type of data and are intended to be changed at some point (mutable). Props is an object whose properties' values may change, but it is technically immutable. For example, I couldn't go into Card.js right now and try to reset the value of hand, but I could use setHand in App.js to alter the value of the hand state variable.
 
 4. STRETCH (optional): What is the difference between a div tag and a span tag?
+   If my understanding is correct, a div tag is a general, all-purpose element in html and is a block level element. I've only ever seen span tags used to style text so I'd imagine that's its' main purpose and it's inline.
 
 ### Looking Ahead: Terms for Next Unit
 
-1. Object-oriented programming:
+1. Object-oriented programming: From my understanding, OOP is a programming style primarily used in back-end, but its' principles can also be implemented into front-end. I think the general premise is to compartmentalize related code, kind of like classes in js, so that code becomes more reusable and organized.
 
-2. Ruby:
+_I will be using the internet for the next 2 questions because I know nothing about Ruby_ 2. Ruby: Ruby utilizes OOP! Ruby is a loosely typed language meaning variable types don't have to be declared (looking at you, java 🙄). It's also read top down left to right just like js! It uses something called garbage collection which sounds pretty cool. It seems like it just helps save memory which is important when working in back-end!
 
 3. Ruby Hashes:
+   Ruby hashes are collections of key-value pairs and are denoted by curly braces which contain key-value pairs separated by commas (sounds like an object to me!). The only difference is instead of using a colon to assign pairs, a fat arrow is used. And rather than using dot notation to access the property and its value, one must call the hash by name followed by the key name within brackets.
 
 ---
 
